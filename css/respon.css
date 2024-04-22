@@ -56,10 +56,10 @@ a:hover {
 }
 /* blok do usunięcia podkreślenia i niebieskiego koloru hiperłącza */
 
-.logo-pk,
+/* .logo-pk, */
 .logo-pk2 {
   font-weight: 600;
-  margin: 1% 6px 0 6px;
+  margin: 1% 1% 1% 1%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,9 +131,9 @@ footer {
     flex-basis: 100%; /* Ustawia bazową szerokość elementu na 100%, aby przenieść go do nowego wiersza */
   }
 
-  /* body {
-    margin: 0 0 1% 0;
-  } */
+  body {
+    margin-top: 3%;
+  }
 
   .menu,
   footer,
@@ -142,9 +142,14 @@ footer {
     font-size: 85%;
   }
 
-  /* .menu {
-    margin-top: 1%;
-  } */
+  .menu {
+    justify-content: center;
+    flex-grow: 1; /* Elementy rozciągają się, aby wypełnić dostępną przestrzeń */
+  }
+
+  .menu1 {
+    padding-bottom: 5%;
+  }
 
   .box-profil {
     padding: 0px 0px 0px 0px;
