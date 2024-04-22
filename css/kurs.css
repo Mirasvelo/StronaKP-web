@@ -1,0 +1,135 @@
+body {
+  /* padding: 8% 1% 1% 1%; */
+  line-height: 1.5;
+}
+
+.oferta {
+  max-width: 1100px;
+  margin: 0 auto; /* Ustawia marginesy poziome na "auto", co automatycznie wyśrodkuje zawartość */
+  margin-bottom: 4%;
+  display: flex;
+  flex-direction: row;
+  font-size: medium;
+}
+
+.info-oferta {
+  padding-left: 2%;
+  /* align-self: flex-start; Wyświetla wszystkie kontenery na górze */
+  margin: 0 0 2% 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 30%;
+}
+
+.kurs-menu {
+  font-weight: bold;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+}
+
+.line1 {
+  transform: rotate(90deg); /* Obrót o 90 stopni */
+  min-width: 200px;
+}
+
+.line2 {
+  transform: rotate(90deg); 
+  border: 1px solid black;
+}
+
+.line22 {
+  position: relative;
+  bottom: -57px;
+}
+
+.line24 {
+  position: relative;
+  bottom: -45px;
+}
+
+.zero-four {
+  position: relative;
+  bottom: 12px;
+}
+
+.kurs-menu-01 {
+  margin-right: 18px;
+}
+
+.kurs-menu-04 {
+margin-left: 12px;
+}
+
+
+.img-etapy {
+  justify-content: center;
+
+}
+
+.box-etap {
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-bottom: 4%;
+  display: flex;
+  flex-direction: row;
+  font-size: medium;
+}
+
+.info-etapy {
+  padding-left: 2%;
+  max-width: 50%;
+}
+
+.title {
+  font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 900px) {
+  /* body {
+    margin: 12% 1% 10% 1%;
+  } */
+
+  .oferta {
+    display: flex;
+    flex-direction: column-reverse; /* Zamiana miejscami kolumn */
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+  }
+
+  .box-etap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .info-oferta {
+    max-width: 80%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: left; 
+    margin-right: 2%;
+    font-size: 80%; /* Zmniejszenie rozmiaru czcionki o 20% */
+    padding: 2%; /* Zmniejszenie wewnętrznego marginesu o 20% */
+  }
+
+  .info-etapy {
+    max-width: 100%; 
+    font-size: 80%; /* Zmniejszenie rozmiaru czcionki o 20% */
+    padding: 2%; /* Zmniejszenie wewnętrznego marginesu o 20% */
+  }
+
+  .line2 {
+    max-width: 80%;
+  }
+
+  /* .img-etapy {
+    display: flex;
+  } */
+
+}

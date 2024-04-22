@@ -1,0 +1,49 @@
+body {
+    padding: 0% 1% 0% 1%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    position: relative; /* element pozycjonuje się względem swojej normalnej pozycji w układzie strony, Jest to przydatne, gdy chcesz dostosować położenie elementu bez wpływania na pozycje innych elementów na stronie */
+    text-align: center; /* Wyśrodkowanie zdjęcia */
+    max-width: 300px;
+    background-color: rgb(228, 226, 226);
+    margin-bottom: 2%;
+    font-size: x-small;
+    margin: 0 auto; /* Automatyczne wyśrodkowanie kontenera */
+}
+
+.main-blog {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2%;
+    margin: 0 auto; /* Automatyczne wyśrodkowanie kontenera */
+    }
+ 
+.name {
+    padding: 6% 0 4% 0;
+    font-weight: bold;
+
+ }   
+
+ .lorem-ipsum {
+    padding: 3%;
+ }
+
+.box {
+    width: 100%;
+    margin-bottom: 6%;
+}
+
+@media screen and (min-width: 800px) {
+    .main-blog {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .name,
+    .lorem-ipsum {
+        font-size: medium;
+    }
+}

@@ -1,0 +1,167 @@
+
+body {
+  font-family: Raleway, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* margin: 0 0 1% 0; */
+}
+
+li {
+  list-style-type: circle; /* Zmienia styl punktów na kółka */
+}
+
+
+ img { /* obrazy będą dostosowywać swoją szerokość do szerokości kontenera */
+  max-width: 100%;
+  height: auto;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-evenly; /*  rozmieszczenie elementów wzdłuż głównej osi kontenera, odstępy między elementami są takie same, a pierwszy i ostatni element są wyrównane do krawędzi kontenera, a reszta jest równomiernie rozłożona między nimi.*/
+}
+
+.menu {
+  flex: 1; 
+  /* Każdy element zajmuje równą część dostępnej przestrzeni */
+  display: flex;
+  /* flex-direction: row; */
+   /* Elementy będą wyświetlane w jednym rzędzie */
+  align-items: center; /* Wyśrodkowanie zawartości w pionie */
+  justify-content: space-between; 
+  flex-wrap: wrap; /* Zapewnia, że elementy, które nie mieszczą się w jednym wierszu, przechodzą do następnego */
+  font-size: x-large;
+  font-weight: 600;
+  margin: 1% 5% 0% 5%;
+}
+
+.menu1 {
+  margin: 0 6px 0 6px;
+  cursor: pointer;
+}
+
+/* blok do usunięcia podkreślenia i niebieskiego koloru hiperłącza */
+a {
+  text-decoration: none; /* Usunięcie podkreślenia */
+  color: inherit; /* Dziedziczenie koloru tekstu */
+}
+
+a:visited {
+  color: inherit; /* Dziedziczenie koloru tekstu dla odwiedzonych linków */
+}
+
+a:hover {
+  text-decoration: none; /* Usunięcie podkreślenia po najechaniu myszką */
+  color: inherit; /* Dziedziczenie koloru tekstu po najechaniu myszką */
+}
+/* blok do usunięcia podkreślenia i niebieskiego koloru hiperłącza */
+
+.logo-pk,
+.logo-pk2 {
+  font-weight: 600;
+  margin: 1% 6px 0 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 10%; /* Pierwszy i ostatni element mają stałą szerokość 15% */
+  cursor: pointer; 
+}
+
+header {
+  /* position: fixed; */
+  /* top: 0;
+  left: 0; */
+  width: 100%; /* Divy zajmują całą szerokość kontenera */
+  /* background-color: #dddada; */
+  /* z-index: 1000; */
+  color: black;
+  /* text-align: center; */
+  justify-content: space-between;
+  /* max-height: 66px;  */
+  /* Maksymalna wysokość (w tym przypadku nagłówka) */
+  margin-bottom: 3%;
+}
+  
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #dddada;
+  color: black;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: medium;
+  font-weight: 400;
+}
+
+/* .img-menu {
+  padding-top: 15px;
+} */
+
+.tool {
+  max-width: 20%;
+  padding: 1% 2% 0 2%;
+  justify-content: space-between;
+}
+
+/* blok kodu do wyświetlania dymku z tekstem/divem/image */
+.tool .tooltip{
+  position: absolute;
+  right: 25px;
+  top: 60px;
+  background-color: grey;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  opacity: 0; 
+  transition: opacity 0.15s; /* czas opóźnienia */
+  pointer-events: none; /* dopiero po najechaniu bedzie widoczny dymek */
+  white-space: nowrap;/* wyświetli tekst w jednej linii */
+}
+
+.tool:hover .tooltip{
+    opacity: 1;
+}
+/* blok kodu do wyświetlania dymku z tekstem/divem/image */
+
+@media screen and (max-width: 900px) {
+  .menu {
+    flex-basis: 100%; /* Ustawia bazową szerokość elementu na 100%, aby przenieść go do nowego wiersza */
+  }
+
+  /* body {
+    margin: 0 0 1% 0;
+  } */
+
+  .menu,
+  footer,
+  .text-profil,
+  .info-kontakt {
+    font-size: 85%;
+  }
+
+  /* .menu {
+    margin-top: 1%;
+  } */
+
+  .box-profil {
+    padding: 0px 0px 0px 0px;
+  }
+
+  /* .logo-pk {
+    flex: 15% 0 0;
+    max-width: auto;
+  } */
+
+  .logo-pk2 {
+    flex: 0 0 20%;
+    max-width: auto;
+  }
+
+  /* header {
+    max-height: 80px;
+  } */
+}
+

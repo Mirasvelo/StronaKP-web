@@ -1,0 +1,84 @@
+body {
+    /* margin: 0% 1% 10% 0; */
+}
+
+.box-profil1 {
+    display: flex;
+    justify-content: space-between; /* Elementy będą równomiernie rozłożone wzdłuż osi poziomej */
+    align-items: center;
+    padding: 5% 1% 4% 5%;
+}
+
+.title {
+    margin-top: 0;
+    font-size: 150%;
+    font-weight: 700;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.text-profil {
+    line-height: 1.5; /* Ustawienie interwału na 1.5 razy wysokości czcionki */
+    margin-right: 1%;
+    /* white-space: normal; */ /* Domyślne zachowanie - tekst zawija się w kolejne linie */
+}
+
+.thumbnail-row {
+    margin-bottom: 0px;
+}
+
+.section-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: auto;
+    row-gap: 50px;
+    justify-items: center;
+}
+
+.preview {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* wyświetlanie układu w sposób kolumnowy */
+    max-width: 750px;
+}
+
+.v-row {
+    display: flex;
+    /* align-items: center; */
+}
+
+.thumbnail {
+    max-width: 250px;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+@media (max-width: 1000px){
+    .section-grid{
+      grid-template-columns: 1fr;
+    }
+
+    .thumbnail {
+        max-width: 200px;
+    }
+
+    .box-left {
+        max-width: 530px;
+    }
+  }
+
+  @media (max-width: 800px){
+    .section-grid{
+      grid-template-columns: 1fr;
+    }
+
+    .thumbnail {
+        max-width: 120px;
+    }
+
+    /* body {
+        margin: 0% 1% 17% 0;
+    } */
+  }
